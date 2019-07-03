@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Preferences Languages per Programmers</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 jumbotron text-center">
+            <h1 id="mainTitle">Evolution of preferences of programming languages</h1>
+            <p>Years 2011 - 2019</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Choose a language</h3>
+              </div>
+              <div id="sample-metadata" class="panel-body">
+                  <select id="selDataset" onchange="newSelection(this.value)"></select>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+              <div class="well">
+                  <h3>For the seventh year in a row, JavaScript is the most commonly used programming language, 
+                    but Python has risen in the ranks again. This year, Python just edged out Java in overall ranking, 
+                    much like it surpassed C# last year and PHP the year before. Python is the fastest-growing major 
+                    programming language today.</h3>
+                  
+              </div>
+          </div>
+          
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="lienzo"></div>      
+            </div>
+          </div>
+      </div>
+
+      
+
+    
+  
+  
+  
+    <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+    <!--  <script src="../static/js/app.js"></script>    -->
+</html>
